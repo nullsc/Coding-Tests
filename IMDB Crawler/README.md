@@ -1,7 +1,7 @@
 # IMDB Scraper
 
-Simple too that will scrape and print out the name of the top rated films
+Simple tool that will scrape and print out the names of the top rated films
 
-![alt text](https://github.com/nullsc/Coding-Tests/blob/master/IMDB%20Crawler/Capture.PNG "Logo Title Text 1")
+![alt text](https://github.com/nullsc/Coding-Tests/blob/master/IMDB%20Crawler/Capture.PNG "Screen Shot")
 
 #scraper #crawler #bot
