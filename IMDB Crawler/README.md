@@ -2,4 +2,4 @@
 
 Simple too that will scrape and print out the name of the top rated films
 
-[logo]: /Capture.PNG "Screen Shot"
+[logo]: https://github.com/nullsc/Coding-Tests/blob/master/IMDB%20Crawler/Capture.PNG "Screen Shot"
