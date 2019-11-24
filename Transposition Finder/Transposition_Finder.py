@@ -23,7 +23,7 @@ def brute(sumStr):
     print("Bruting")
     #need to put the test here, if it works then no need to brute
     #also need to print which keys are switched
-    sumStr = sumStr.replace(" ", "").split("=")
+    sumStr = sumStr.replace(" ", "").split("=") #remove white space and split the string
     firstP = sumStr[0] #before the = sign
     answerP = sumStr[1] # after the = sign
     print("Trying {}={}". format(firstP, answerP))
@@ -35,7 +35,7 @@ def brute(sumStr):
 
     if(test_sum(str(sumStr), answerP) == True): #doesn't work correctly for some reason
         print(str(sumStr), "Already works")
-        return 1 #already works
+        return 1 #exit as the sum already works
 
     for x in range(0, len(ansArray)):
     #have to make a copy of the string that you can use each time
