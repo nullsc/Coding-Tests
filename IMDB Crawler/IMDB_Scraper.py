@@ -1,6 +1,7 @@
 #24/11/2019
 #Basic tool to scrape imbd.com for the top movies
 #Gets the top 25 films
+#requirements: bs4, requests
 
 import bs4, requests
 from bs4 import BeautifulSoup
