@@ -1,5 +1,7 @@
 #15/11/2019
 
+#TODO
+#add a proper checker
 #for example 123 = 3
 #could be 1*3 = 3
 
@@ -23,7 +25,7 @@ def brute(sumStr):
     print("Bruting")
     #need to put the test here, if it works then no need to brute
     #also need to print which keys are switched
-    sumStr = sumStr.replace(" ", "").split("=") #remove white space and split the string
+    sumStr = sumStr.replace(" ", "").split("=") #remove white space and split the string #don't need to split each time (will fix)
     firstP = sumStr[0] #before the = sign
     answerP = sumStr[1] # after the = sign
     print("Trying {}={}". format(firstP, answerP))
