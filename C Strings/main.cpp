@@ -65,6 +65,6 @@ char* ltrim2(const char* str)
 	while (isspace(*str)) {
 		str++;
 	}
-	strcpy_s(trimmed, strlen(str) + 1, str); //returns the copied string
+	strcpy_s(trimmed, strlen(str) + 1, str); //returns the copied string, need to fix
 	return trimmed;
 }
