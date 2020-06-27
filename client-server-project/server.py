@@ -1,4 +1,5 @@
 #Server.py
+#udp connection
 
 import socket, sys
 
@@ -20,7 +21,7 @@ fd = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 fd.bind((udp_ip,udp_port))
 while True: #keep receiving
     try:
-        r = fd.recvfrom(1000) #store the received data in r
+        r = fd.recvfrom(1000) #store the received data in r - buffer size of 1000
         client_address = r[1] #this stores the client ip & port so we can send data back
 
         
