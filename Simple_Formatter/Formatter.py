@@ -23,6 +23,5 @@ with open(txtFile, 'rt') as file:
         with open(outputFile, 'at') as outFile:
             outFile.write(newLine[0].rstrip() + "\n")
 file.close()
-outFile.close()
 
 print("Complete")
