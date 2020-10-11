@@ -7,9 +7,9 @@ import sys
 
 print("Simple File Formatter")
 
-txtFile = "test.txt"
-outputFile = "output.txt"
-DELIMETER = '\t'
+txtFile = "test.txt" #input file
+outputFile = "output.txt" #output file
+DELIMETER = '\t' #the part that you want to delete after
 
 
 print(f"Opening: {txtFile}")
