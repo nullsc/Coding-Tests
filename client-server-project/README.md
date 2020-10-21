@@ -18,5 +18,6 @@ The assignment requires two programs (client and server) in Java or Python, that
 •The server then:
 
 1. computesRby concatenatingS1,S2andS3, adding two characters ’#’ as separators;
-2. computesnas the sum of the lengths ofS1,S2andS3;3. sendsRandnto the client as two distinct UDP packets.Example:the server receivesS1asnet,S2aswor, andS3asking; computesn= 3 + 3 + 4 = 10 andRasnet#wor#king. 
+2. computesnas the sum of the lengths ofS1,S2andS3;
+3. sendsRandnto the client as two distinct UDP packets.Example:the server receives S1 as net,S2aswor, andS3asking; computesn= 3 + 3 + 4 = 10 andRasnet#wor#king. 
 Finally, it sendsRandnto the client.The student has to produce the result of the coursework as follows.
