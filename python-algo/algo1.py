@@ -7,6 +7,10 @@ salaries = [10000, 20000, 30000, 40000, 50000]
 list1 = [1,2,3,4,5]
 list2 = [1,2,3,4,5]
 
+MARKS = [[25, 50, 67], #        grades
+         [51, 87, 37], #names
+         [23, 43, 23]] #
+
 def sumAll(A):
     #return sum of all numbers
     sum = 0
@@ -77,6 +81,7 @@ def salarySplit(salaries, genders):
 
     return (male, female)
 
+
 print(sumAll(arr))
 print(countEven(arr))
 print(countSalaries(salaries))
@@ -84,4 +89,4 @@ print(existsEven(arr))
 print(find20(arr))
 print(equalList(list1, list2))
 print(salarySplit(sal, genders))
-
+print(MARKS)
