@@ -1,0 +1,1 @@
+General Java test tasks
