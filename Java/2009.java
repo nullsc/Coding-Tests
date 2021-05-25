@@ -51,4 +51,20 @@ public class Main
 	    System.out.println("Total reached: " + total + " Times: " + times);
 		
 	}
+		
+	public static int[][] weirdinc(int[][] arr){
+	    int len = arr.length; //rows
+	    int count = 0;
+	    int[][] narr = arr;
+	    
+	    for(int i=0; i<len; i++){
+	        for(int j=0; j<narr[i].length; j++){
+	            narr[i][j]+= count;
+	            System.out.print(narr[i][j]);
+	        }
+	        System.out.print("\n");
+	        count++;
+	    }
+	    return narr;
+	}
 }
