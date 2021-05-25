@@ -21,4 +21,18 @@ public class Main
 	    } 
 	    return num * rate;
 	}
+	
+	public static void change4(int[] num){
+	    int count = 0;
+	    for(int i=0; i<num.length; i++){
+	        if(num[i] == 4){
+	            num[i] = 5;
+	            count++;
+	        }
+	    }
+	    for(int j: num){
+	        System.out.print(j + " ");
+	    }
+	    System.out.println("\nChanges: " + count);
+	}
 }
