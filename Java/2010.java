@@ -47,4 +47,14 @@ public class Main
 	    }
 	    return newa;
 	}
+	public static void stv(String stv){ //print out 3 letter substrings that end in a
+	    if(stv.length() < 3){
+	        return;
+	    }
+	    for(int i=0; i<stv.length()-2; i++){
+	        if(stv.charAt(i+2) == 'a'){
+	            System.out.println(stv.substring(i, i+3));
+	        }
+	    }
+	}
 }
