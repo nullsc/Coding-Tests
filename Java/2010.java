@@ -35,4 +35,16 @@ public class Main
 	    }
 	    System.out.println("\nChanges: " + count);
 	}
+	
+	public static double[] rif(double[] num){
+	    double[] newa = new double[num.length];
+	    newa[0] = num[0];
+	    for(int i=1; i<num.length; i++){
+	        newa[i] = num[i] / num[0];
+	    }
+	    for(double x: newa){
+	        System.out.print(x + " ");
+	    }
+	    return newa;
+	}
 }
