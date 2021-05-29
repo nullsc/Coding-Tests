@@ -57,4 +57,25 @@ public class Main
 	        }
 	    }
 	}
+	
+	public static int[][] sumr(int[][] v){
+	    int[][] ret = new int[2][v.length];
+	    int total;
+	    for(int i=0; i<v.length; i++){
+	        total = 0;
+	        for(int j=0; j<v[i].length; j++){
+	            total += v[i][j];
+	        }
+	        ret[0][i] = total;
+	    }
+	    ret[1] = v[0];
+	    
+	    for(int x =0; x<ret.length; x++){ //debug
+	        for(int z=0; z<ret[x].length; z++){
+	            System.out.print(ret[x][z]);
+	        }
+	        System.out.println();
+	    }
+	    return ret;
+	}
 }
