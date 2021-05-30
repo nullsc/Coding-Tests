@@ -58,4 +58,19 @@ public class Main
     System.out.println();
 	    return ret;
 	}
+	
+	public static int getGoalDifference(int[] gfor, int[] gagain){
+	    int[] sumarray = new int[gfor.length];
+	    int ret = 0;
+	    sumarray = difference(gfor, gagain);
+	    if(sumarray == null)
+	        return -999;
+	        
+	    for(int i: sumarray){
+	        ret += i;
+	        System.out.println("Return sum: " + ret);
+	    }
+	    
+	    return ret;
+	}
 }
