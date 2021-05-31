@@ -73,4 +73,20 @@ public class Main
 	    
 	    return ret;
 	}
+	
+	public static void printSubstrings(String word){
+	    String ret = "";
+	    String buf = "";
+	    for(int i=0; i<word.length()/2; i++){
+	        ret = word.substring(i, word.length()-i);
+	        for(int j=0; j<i; j++){
+	            //System.out.print(" ");
+	            buf += " "; // x for debug
+	        }
+	        System.out.println(buf + ret + buf);
+	        buf = ""; //reset
+	            
+	        
+	    }
+	}
 }
