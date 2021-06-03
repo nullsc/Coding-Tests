@@ -23,6 +23,8 @@ public class Main
 		int[] ga = {1, 2, 2};
 		difference(gf, ga);
 		
+		int[] n = {1,2,3,4,5,9,7,8,9,9};
+		duplicate(n);
 	}
 	
 	public static int[][] sumr(int[][] v){
@@ -88,5 +90,17 @@ public class Main
 	            
 	        
 	    }
+	}
+	
+	public static boolean duplicate(int[] arr){ /*finds if there is a duplicate in an array*/
+	    for(int i=0; i<arr.length -1; i++){
+	        for(int j=i+1; j<arr.length; j++){
+	            if(arr[i] == arr[j]){
+	                System.out.println("Duplicate found: " + arr[i] + " & " + arr[j]);
+	                return true;
+	            }
+	        }
+	    }
+	    return false;
 	}
 }
