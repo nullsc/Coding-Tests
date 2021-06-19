@@ -10,6 +10,29 @@ void sqr(int *num){
     *num = *num * *num;
 }
 
+void rot13(const char *str){
+//print out rot13 string
+    for(int i=0; i<strlen(str); i++){
+        if(str[i] >= 'a' && str[i] <= 'z'){ //lowercase
+            if(str[i] >= 'a' && str[i] <= 'm'){
+                printf("%c", str[i] + 13);
+            } else {
+                printf("%c", str[i] - 13);
+            }
+        } 
+        else if(str[i] >= 'A' && str[i] <= 'Z'){ //uppercase
+            if(str[i] >= 'A' && str[i] <= 'M'){
+                printf("%c", str[i] + 13);
+            } else {
+                printf("%c", str[i] - 13);
+            }
+        } else { //special char, keep it the same
+            printf("%c", str[i]);
+        }
+    }
+    printf("\n");
+}
+
 int main()
 {
     int x = 5;
