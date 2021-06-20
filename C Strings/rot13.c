@@ -1,8 +1,5 @@
 /******************************************************************************
 
-                              Online C++ Compiler.
-               Code, Compile, Run and Debug C++ program online.
-Write your code in this editor and press "Run" button to compile and execute it.
 
 *******************************************************************************/
 
@@ -36,6 +33,7 @@ void edit(char *n){ //test, change first char
 int main()
 {
     char test[] = "uryyb!"; // hello!
+  //char test[] = "abcdefghijklmnopqrstuvwxyz";
     rot13(test);
     printf("%s \n", test);
     return 0;
