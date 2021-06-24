@@ -27,7 +27,7 @@ int main()
 
   char str[32];
   randstr(str, 15);
-  printf("Random: %s", str);
+  printf("Random: %s \n", str);
 
   return 0;
 }
