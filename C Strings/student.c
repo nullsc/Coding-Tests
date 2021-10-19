@@ -60,6 +60,7 @@ int main()
     printf("A string: %s \n", astring);
     free(astring);
     
+    //student Student = {0, 25, "student"};
     student Student = {0};
     Student.id = 0;
     Student.age = 20;
