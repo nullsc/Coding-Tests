@@ -19,6 +19,22 @@ bool startsWith(char first[], char second[]) {
     return true;    
 }
 
+bool endsWith(char first[], char second[]) {
+    if(first == NULL || second == NULL)
+        return false;
+        
+    if(strlen(second) > strlen(first))
+        return false;
+    
+    int j = strlen(first) -1;   
+    for(int i=strlen(second)-1; i>0; i--) {
+        if(first[j] != second[i])
+           return false;
+        j++;
+    }
+    return true;    
+}
+
 int main()
 {
     char * test = "test string";
@@ -29,5 +45,8 @@ int main()
     if(startsWith(test, "te"))
         printf("Match: %s: te", test);
         
+    if(endsWith("hello.exe", "exe"))
+        printf("Match end \n");
+    
     return 0;
 }
