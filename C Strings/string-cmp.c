@@ -5,6 +5,7 @@
 #include <string.h>
 #include <stdbool.h>
 
+/* Checks if a string starts with a substring */
 bool startsWith(char first[], char second[]) {
     if(first == NULL || second == NULL)
         return false;
@@ -19,6 +20,7 @@ bool startsWith(char first[], char second[]) {
     return true;    
 }
 
+/* Checks if a string ends with a substring */
 bool endsWith(char first[], char second[]) {
     if(first == NULL || second == NULL)
         return false;
