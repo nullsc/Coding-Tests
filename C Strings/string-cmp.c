@@ -5,7 +5,9 @@
 #include <string.h>
 #include <stdbool.h>
 
-/* Checks if a string starts with a substring */
+/* Checks if a string starts with a substring 
+@returns true or false
+*/
 bool startsWith(char first[], char second[]) {
     if(first == NULL || second == NULL)
         return false;
