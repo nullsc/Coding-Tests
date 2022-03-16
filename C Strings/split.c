@@ -38,6 +38,7 @@ int main()
     char **spl = splitIn2(test1, '@');
     printf("%d \n", findFirst(test1, 'y'));
     printf("Split: %s, %s", spl[0], spl[1]);
+    free(spl[0]);free(spl[1]);
     free(spl);
     return 0;
 }
