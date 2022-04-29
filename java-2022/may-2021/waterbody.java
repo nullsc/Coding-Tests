@@ -1,4 +1,4 @@
-public abstract class waterbody
+public abstract class waterbody // abstract class, uses abrast hasFresh function too
 {
     private String name;
     
