@@ -13,5 +13,11 @@ public class Main
         System.out.println(r2);
         System.out.println(r1.hasFresh());
         System.out.println(sea.hasFresh());
+		
+		       List<String> xs = Arrays.asList(new String[]{"Hello", "World", "!"});
+        List<Integer> ys = Arrays.asList(new Integer[]{1, 2, 3});
+        int d = (new LengthDistancer()).totalDistance(xs, ys);
+        System.out.println(d); // prints 9
+		
 	}
 }
