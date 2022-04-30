@@ -22,16 +22,19 @@ public class Main
 		System.out.println(lastValue(new Object[]{new Object(), 1.5, 3, "42"}));
 	}
 	
+	/*
+	Go throgh an array and find the last index that has float number 
+	*/
 	public static double lastValue(Object[] arr){
 	    double index = -1;
 	    
 	    for(int i=arr.length-1; i>=0; i--){
-	        if(arr[i] instanceof Number){
-    	        Number x = (Number)arr[i];
-    	        double y = x.doubleValue();
+	        if(arr[i] instanceof Number){ // check if it's a number
+    	        Number x = (Number)arr[i]; // cast
+    	        double y = x.doubleValue(); //cast
     	        //System.out.println(y);
     	       index = y;
-    	       break;
+    	       break; // found so break loop
 	        }
 	    }
 	    return index;
