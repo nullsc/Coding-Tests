@@ -1,6 +1,12 @@
 /******************************************************************************
 
 *******************************************************************************/
+import java.util.List;
+import java.util.Arrays;
+import java.util.Scanner;
+import java.util.HashMap;
+import java.util.TreeMap;
+
 public class Main
 {
 	public static void main(String[] args) {
@@ -38,5 +44,39 @@ public class Main
 	        }
 	    }
 	    return index;
+	}
+	
+	/*
+	Read in n words, sort in order and display the occurence
+	*/
+	public static void countWords(int n){
+	    if(n<0)
+	        throw new IllegalArgumentException();
+	        
+	   TreeMap<String, Integer> map = new TreeMap<String, Integer>(); // stores in ascending order
+	   
+	   System.out.println("Enter " + n + " words:");
+	   
+	   Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+        //String test = myObj.nextLine();
+        for(int i=0; i<n; i++){
+            
+            String line = myObj.nextLine(); 
+            //
+            if(map.containsKey(line)){
+                map.put(line, map.get(line) + 1);
+            } else {
+                map.put(line, 1);
+            }
+        }
+        
+        myObj.close();
+        
+        for (HashMap.Entry<String, Integer> entry : map.entrySet()) {
+            String key = entry.getKey();
+            Integer value = entry.getValue();
+            System.out.println(key + ":" + value);
+        }
+	
 	}
 }
