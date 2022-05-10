@@ -36,4 +36,17 @@ public class Main
 		    throw new BadInputException();
 		}
 	}
+	
+	/* recursive string appending */
+	public static String multiplyRecursive(String s, int n){
+	    if(s == null)
+	        throw new IllegalArgumentException();
+	   
+	   
+	   if(n == 1)
+	        return s;
+	        
+	   return s + multiplyRecursive(s, n-1);
+	    
+	}
 }
