@@ -1,7 +1,9 @@
 //
+import java.util.Scanner;
+
 public class Main
 {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception { // needed
 		System.out.println("Hello World");
 		
 		StringHalver halver = new StringHalver();
@@ -21,4 +23,17 @@ public class Main
 	   }
 	   return 0;
 	}*/
+	
+	public static void getDoub() throws BadInputException { // checked exception
+		System.out.println("Enter Double: ");
+		
+		Scanner sc=new Scanner(System.in);
+		if(sc.hasNextDouble()){
+		    double doub=sc.nextDouble();
+
+		    System.out.println("You entered: " + doub);
+		} else {
+		    throw new BadInputException();
+		}
+	}
 }
