@@ -29,13 +29,16 @@ bool endsWith(char first[], char second[]) {
         
     if(strlen(second) > strlen(first))
         return false;
+
     
-    int j = strlen(first) -1;   
-    for(int i=strlen(second)-1; i>0; i--) {
-        if(first[j] != second[i])
-           return false;
-        j++;
-    }
+    int j = strlen(first) - 1;
+	for (int i = strlen(second) - 1; i >= 0; i--) {
+	    printf("%c : %c \n", first[j], second[i]);
+		if (first[j] != second[i])
+			return false;
+		j--;
+	}
+
     return true;    
 }
 
